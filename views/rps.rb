@@ -1,7 +1,7 @@
 
-<% @computer_choice = ["rock", "paper", "scissors"].sample %>
+@computer_choice = ["rock", "paper", "scissors"].sample 
 
-<% if @computer_choice == @human_choice
+if @computer_choice == @human_choice
   @result = "The result is a tie!"
 elsif @human_choice == 'rock'
   if @computer_choice == 'scissors'
@@ -23,4 +23,4 @@ elsif @human_choice == 'scissors'
   end
 else
   @result = "Entry not valid. Please enter rock, paper or scissors!"
-end %>
+end 
