@@ -1,0 +1,86 @@
+
+body {
+  font-family: Sans-serif;
+  font-size: 20px;
+  background: #F8F7EF;
+  text-align: center;
+
+}
+
+h1, h2, h3, .hands {
+  text-transform: uppercase;
+  color: #44474A;
+  text-shadow: 0px 2px 3px #666;
+}
+
+a {
+  background: #FEEB78;
+  color: #C14D40;
+  line-height: 60px;
+  margin: 25px;
+  padding: 25px;
+  border-radius: 50%;
+  border-color: #E4D36B;
+  text-align: center;
+  font-size: 30px;
+  transition: all 0.3s ease 0s;
+}
+
+a:hover {
+  background: #C14D40;
+  color: #FEEB78
+}
+
+
+.weapons {
+  margin: 40px 0
+}
+
+.hands{
+  font-size: 100px
+}
+.hands strong{
+  display: block;
+  font-size: 30px;
+  margin: 25px
+}
+#left{
+  transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+
+#right{
+  transform: rotate(-90deg) scaleX(-1) ;
+  -o-transform: rotate(-90deg) scaleX(-1) ;
+  -ms-transform: rotate(-90deg) scaleX(-1) ;
+  -webkit-transform: rotate(-90deg) scaleX(-1) ;
+}
+#left, #right {
+    position: relative;
+    -webkit-animation-name: bounce; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.7s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+    animation-name: bounce;
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes bounce {
+    0%   {top:3px;}
+    25%  {top:6px;}
+    50%  {top:9px;}
+    75%  {top:6px;}
+    100% {top:3px;}
+}
+
+/* Standard syntax */
+@keyframes bounce {
+    0%   {top:3px;}
+    25%  {top:6px;}
+    50%  {top:9px;}
+    75%  {top:6px;}
+    100% {top:3px;}
+}

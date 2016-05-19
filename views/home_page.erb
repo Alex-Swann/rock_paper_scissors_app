@@ -1,17 +1,13 @@
-<html>
-	<head>
-		<title>Rock, Paper, Scissors!</title>
-	</head>
-	<body>
-		<h1>Welcome to the game!</h1>
-		<h2>Let's play rock, paper, scissors!</h2>
-		<form action="/" method="post">
-			Do you choose rock, paper or scissors?
-			<input type="text" name="human_choice">
-			<input type="submit">
-		</form>
-	</body>
-</html>
-
-
-
+<h1>Welcome to the game!</h1>
+<h2>Let's play rock, paper, scissors!</h2>
+<h3>CHOOSE YOUR WEAPON</h3>
+<div class="weapons">
+	<a href="/rock"><i class="fa fa-hand-rock-o" aria-hidden="true"></i></a>
+	<a href="/paper"><i class="fa fa-hand-paper-o" aria-hidden="true"></i></a>
+	<a href="/scissors"><i class="fa fa-hand-scissors-o" aria-hidden="true"></i></a>
+</div>
+<div class="hands">
+	<i class="fa fa-hand-rock-o" id="left" aria-hidden="true"></i>
+	<i class="fa fa-hand-rock-o" id="right" aria-hidden="true"></i>
+	<strong>Get ready to battle</strong>
+</div>
