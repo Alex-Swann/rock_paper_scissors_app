@@ -41,9 +41,9 @@ def play hc
 				return @defeat = true
 			end
 		when 'scissors'
-			# if @computer_choice == 'paper'
+			if @computer_choice == 'paper'
 			return @victory = true
-			return  "You win!"
+			#return  "You win!"
 		else
 			# return "Computer wins!"
 			return @defeat = true
