@@ -8,13 +8,13 @@ body {
 h1,
 h2,
 h3,
-.hands, .result i {
+.hands, .result {
   text-transform: uppercase;
   color: #44474A;
   text-shadow: 0px 2px 3px #666;
 }
 
-a {
+.weapons a {
   background: #FEEB78;
   color: #C14D40;
   line-height: 60px;
@@ -27,7 +27,7 @@ a {
   transition: all 0.3s ease 0s;
 }
 
-a:hover {
+.weapons a:hover {
   background: #C14D40;
   color: #FEEB78
 }
@@ -67,7 +67,15 @@ a:hover {
   position: relative;
   top: 10px;
 }
-
+.victory{
+  color: green
+}
+.defeat{
+  color: red
+}
+.tie{
+  color: orange
+}
 #human::after,
 #computer::after {
   display: block;
